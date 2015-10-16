@@ -1,0 +1,30 @@
+{
+  "name": "gift-wrapper",
+  "version": "1.0.0",
+  "description": "A Q wrapper for the gift library to perform git operations in node.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zpbappi/gift-wrapper.git"
+  },
+  "keywords": [
+    "q",
+    "gift",
+    "git",
+    "node",
+    "wrapper"
+  ],
+  "author": "Zp Bappi <zpbappi@gmail.com> (http://zpbappi.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zpbappi/gift-wrapper/issues"
+  },
+  "homepage": "https://github.com/zpbappi/gift-wrapper",
+  "dependencies": {
+    "gift": "^0.6.1",
+    "q": "^1.4.1"
+  }
+}
