@@ -1,6 +1,6 @@
 {
   "name": "gift-wrapper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Q wrapper for the gift library to perform git operations in node.",
   "main": "index.js",
   "scripts": {
