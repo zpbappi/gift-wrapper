@@ -1,30 +1,37 @@
 # gift-wrapper
 A [Q](https://github.com/kriskowal/q) wrapper for the [gift](https://github.com/notatestuser/gift) library to perform git operations in node.
 
+## Installation
+It does not get any easier.
+```
+npm install gift-wrapper
+```
+
 ## API documentation
-`gift-wrapper` API is (almost) exactly same as `gift`. Only differece is, instead of doing
+`gift-wrapper` API is (almost) exactly same as `gift`. Only differece is, instead of doing the folowing in `gift`
 ```js
 someObject.some_method( [arguments], callback );
 ```
-in `gift`, we will be able to do
+
+we will be able to do the following in `gift-wrapper`
 ```js
 someObject.some_method( [arguments] )
 .then( some_callback )
 .fail( error_handler )
 ```
-using `gift-wrapper`.
 
 Here is the link to [gift README file](https://github.com/notatestuser/gift/blob/master/README.md) for API reference.
 
 ### Special note about callbacks
 There are two forms of callbacks in `gift`. They are-
+
 1. `callback (error, result)`
 2. `callback (result)`
 
 However, callback function of form `callback(error, result)` is not present
 in `gift-wrapper`. Instead, the `error` parameter will be available in error handlers
 of `Q` promises (i.e. in `fail()` method) in appropriate situations. All other callback
-functions frm `gift` remains same are avaialble in `then()`.
+functions from `gift` remains same and results are avaialble in immediate `then()` after the call.
 
 ### Synchronous execution
 Although very rare, but there are few function in `gift` which executes in a synchronous manner
