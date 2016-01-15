@@ -42,7 +42,7 @@ This behavior remains the same in `gift-wrapper` to be consistent with `gift`.
 ```js
 var gw = require("gift-wrapper");
 
-var repo = gw("/path/to/loca/repo");
+var repo = gw("/path/to/local/repo");
 
 repo.identity()
 .then(function(id){
